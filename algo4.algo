@@ -1,0 +1,16 @@
+ALGORITHM pallindrome 
+VAR
+  i,j:INTEGER:=0;
+  str:STRING
+
+BEGIN
+   FOR i FROM 0 TO str.length-1 STEP 1  DO
+      FOR j FROM str.length-1 TO 0 STEP -1  DO
+        IF (str[i]==str[j] or str.length==1) THEN
+            write('the word is a pallindrome')
+            else
+                write('the word isn't pallindrome )
+        END_IF
+      END_FOR
+   END_FOR
+END
